@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+    maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      #canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+      }
+      #progress {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 50%;
+        display: inline-block;
+        font-size: 20px;
+        text-align: center;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <div id="progress">加载中，请关闭无图模式...</div>
+    <script>
+      const canvas = document.querySelector("#canvas");
+      window.canvas = canvas;
+      canvas.width = window.screen.width;
+      canvas.height = window.screen.height;
+      canvas.style.width = canvas.width + "px";
+      canvas.style.height = canvas.height + "px";
+      const ctx = canvas.getContext("2d");
+      window.ctx = ctx;
+      window.pixelRatio = devicePixelRatio;
+      window.isMobile = /Mobile|Android|iPhone|webOS|iPod|BlackBerry/i.test(
+        navigator.userAgent
+      );
+      // 本地开发，影响图片加载
+      window.__dev__ = false;
+    </script>
+    <script type="text/javascript" src="/yxts/main.js"></script>
+  </body>
+</html>
