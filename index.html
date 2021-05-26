@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="https://gw.alicdn.com/imgextra/i3/O1CN01s3UDzQ1t5LdrmxVwF_!!6000000005850-2-tps-200-200.png"
+    />
+    <link rel="stylesheet" href="http://redleaf.fun/rc/umi.css" />
+    <script>
+      window.routerBase = "/rc/";
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="http://redleaf.fun/rc/umi.js"></script>
+
+    <script>
+      const log = new XMLHttpRequest();
+      log.open("GET", `http://redleaf.fun/api/rc/log`);
+      log.send();
+    </script>
+  </body>
+</html>
