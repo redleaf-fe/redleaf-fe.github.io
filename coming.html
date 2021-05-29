@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>REDLEAF-FE</title>
+    <title>REDLEAF_FE</title>
     <link
       rel="shortcut icon"
       href="https://gw.alicdn.com/imgextra/i3/O1CN01s3UDzQ1t5LdrmxVwF_!!6000000005850-2-tps-200-200.png"
@@ -39,26 +39,17 @@
         font-size: 50px;
         line-height: 200px;
       }
-      .item-contain {
-        display: flex;
-        flex-wrap: wrap;
-      }
-      .item-contain .item {
-        width: 33%;
-        display: inline-block;
-      }
-      .item-contain .title {
-        font-size: 24px;
-        line-height: 32px;
-        color: brown;
-        margin-bottom: 20px;
+      .tips {
+        font-size: 30px;
         text-align: center;
       }
-      .item-contain .text {
-        font-size: 18px;
-        line-height: 22px;
-        margin-bottom: 40px;
-        text-align: center;
+      .back {
+        display: block;
+        width: 50px;
+        height: 50px;
+        margin: 40px auto;
+        background-image: url(https://gw.alicdn.com/imgextra/i3/O1CN0149pMdx1wI7X5fUihA_!!6000000006284-2-tps-200-200.png);
+        background-size: cover;
       }
     </style>
     <style>
@@ -70,15 +61,6 @@
         .top-part .text {
           line-height: 50px;
         }
-        .item-contain {
-          display: block;
-          text-align: center;
-        }
-        .item-contain .item {
-          display: block;
-          width: 70%;
-          margin: auto;
-        }
       }
     </style>
   </head>
@@ -89,21 +71,8 @@
         <div class="logo"></div>
         <div class="text">redleaf-fe</div>
       </div>
-      <div class="item-contain">
-        <a class="item" href="./rc">
-          <div class="title">redleaf-rc</div>
-          <div class="text">一款pc平台的轻量级react组件</div>
-        </a>
-        <a class="item" href="./weekly">
-          <div class="title">前端小报</div>
-          <div class="text">每周挑选前端技术文章</div>
-        </a>
-        <a class="item" href="./yxts">
-          <div class="title">平安镇</div>
-          <div class="text">一款canvas小游戏，致敬文曲星游戏《英雄坛说》</div>
-        </a>
-      </div>
+      <div class="tips">coming soon</div>
+      <a class="back" href="/"></a>
     </div>
-    <div class="footer"></div>
   </body>
 </html>
